@@ -1,0 +1,107 @@
+:root {
+    color-scheme: light;
+    --text-color: #000;
+    --anchor-color: #3366cc;
+    --visited-anchor-color: #795cb2;
+    --font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #efefef;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    color: var(--text-color);
+    font-size: var(--font-size);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+p,
+pre {
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--anchor-color);
+    outline-color: var(--anchor-color);
+}
+
+a:visited {
+    color: var(--visited-anchor-color);
+    outline-color: var(--visited-anchor-color);
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.content> :first-child {
+    margin-top: 0;
+}
+
+.content> :last-child {
+    margin-bottom: 0;
+}
+
+.center-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.gap {
+    gap: 0.5rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#text {
+    font-family: "MS PGothic", "ＭＳ Ｐゴシック", "Trebuchet MS", Verdana, Futura, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    cursor: default;
+}
